@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour, IInitializable
@@ -8,9 +9,11 @@ public class HealthBar : MonoBehaviour, IInitializable
     [SerializeField] private Image image;
     [SerializeField] private float maxHP;
     [SerializeField] private float currentHP;
+    public float normalizedHealth => currentHP / maxHP;
     [SerializeField] private CharacterList characters;
     [SerializeField] private CharacterControllerList attackers;
     private List<CharacterController> subscribes = new();
+    [SerializeField] private UnityEvent onDie;
 
     public void CountHP()
     {
@@ -37,13 +40,12 @@ public class HealthBar : MonoBehaviour, IInitializable
 
     public void ApplyDamage(float damage)
     {
-        image.fillAmount = currentHP/maxHP;
         currentHP -= damage;
-    }
 
-    public void DebugHP()
-    {
+        if (currentHP <= 0)
+            onDie.Invoke();
 
+        image.fillAmount = currentHP / maxHP;
     }
 
     public void OnDestroy()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour, IInitializable
+public class Spawner : MonoBehaviour, IInitializable, IDataLoader<Character>
 {
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Transform spawnParent;
@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour, IInitializable
         for (int i = 0; i < characters.Count; i++)
         {
             CharacterController spawnedObject = Instantiate(prefabSource, spawnPoints[i].position, spawnParent.rotation, spawnParent);
-            spawnedObject.LoadData(characters[i]);
+            (this as IDataLoader<Character>).LoadData(characters[i], spawnedObject);
             spawnedCharacters.Add(spawnedObject);
         }
     }

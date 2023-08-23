@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   _HP: 100
-  _Damage: 10
-  _attackSpeed: 10
+  _Damage: 50
+  _attackSpeed: 1
   run:
     sprites:
     - {fileID: 21300000, guid: 7ca86e227dae14b4eaeca90db56210cc, type: 3}
@@ -60,3 +60,4 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 25a7ffdf62877cd4fbe925e7ba13bea3, type: 3}
     - {fileID: 21300000, guid: 3314055e06cc62141a8e13332ef11c9b, type: 3}
     - {fileID: 21300000, guid: 4ab5aae33e7530d47a2d522de135724d, type: 3}
+  _icon: {fileID: 21300000, guid: 0eecc28eeaaf64e42810f3195253c303, type: 3}

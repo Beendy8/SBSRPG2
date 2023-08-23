@@ -25,5 +25,12 @@ public class GlobalList<T> : ScriptableObject
     {
         items.Add(prefabHero);
     }
-
+    public void AddRange(IEnumerable<T> _items) 
+    {
+        items.AddRange(_items);
+    }
+    public bool Contains(T targetItem)
+    {
+        return items.Contains(targetItem);
+    }
 }

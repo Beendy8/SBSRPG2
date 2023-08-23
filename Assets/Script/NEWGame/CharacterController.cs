@@ -2,23 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.Assertions;
 
-public class CharacterController : MonoBehaviour
+public class CharacterController : MonoBehaviour, IView<Character>
 {
-    public Character _data;
+    private Character _character;
     [SerializeField] private SpriteRenderer spriteRenderer;
     private Coroutine animationCoroutine;
     private Dictionary<string, CustomAnimation> animations = new();
     public event Action<float> onHit;
     private bool isAttacking;
 
-    public void LoadData(Character data)
+    public void ViewData(Character data)
     {
-        _data = data;
-        animations.Add("run", _data.run);
-        animations.Add("attack", _data.attack);
-        animations.Add("die", _data.die);
+        _character = data;
+        animations.Add("run", _character.run);
+        animations.Add("attack", _character.attack);
+        animations.Add("die", _character.die);
         SetAnimation("run");
     }
 
@@ -28,11 +28,13 @@ public class CharacterController : MonoBehaviour
 
         if (animationCoroutine != null)
             StopCoroutine(animationCoroutine);
-        animationCoroutine = StartCoroutine(AnimationLoop(animations[animName]));
+        animationCoroutine = StartCoroutine(AnimationLoop(animations[animName], animName));
     }
 
-    IEnumerator AnimationLoop(CustomAnimation animation)
+    IEnumerator AnimationLoop(CustomAnimation animation, string animName)
     {
+        Assert.IsTrue(animation.sprites.Length != 0, $"У {_character.name} не заполнена анимация {animName}");
+
         while (true)
         {
             for (int i = 0; i < animation.sprites.Length; i++)
@@ -42,12 +44,10 @@ public class CharacterController : MonoBehaviour
             }
 
             if (isAttacking)
-                onHit?.Invoke(_data.Damage);
+                onHit?.Invoke(_character.Damage);
 
             if (!animation.loop)
                 break;
         }
-
     }
-
 }

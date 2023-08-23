@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2941b8155d84c29499e9e28f0d25718e, type: 3}
   m_Name: Zombie
   m_EditorClassIdentifier: 
-  _HP: 100
-  _Damage: 10
-  _attackSpeed: 0.01
+  _HP: 1000
+  _Damage: 100
+  _attackSpeed: 1
   run:
     sprites:
     - {fileID: 21300000, guid: b70210ce5a3b7c74f8094ebaf732ae65, type: 3}
@@ -60,3 +60,4 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 91f8dd981aa932e45a68189f7b5f00b7, type: 3}
     - {fileID: 21300000, guid: 0aa29e500625a3a48b387fb2b81143b3, type: 3}
     - {fileID: 21300000, guid: 62b7f88baf671f242a625e60b62d8da2, type: 3}
+  _icon: {fileID: 0}

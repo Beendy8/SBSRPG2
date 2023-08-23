@@ -5,14 +5,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MonoBehaviourInitializer : SerializedMonoBehaviour
-{
-    [SerializeField] private MonoBehaviour[] monoBehaviours;
+{ 
     
-    [NonSerialized, OdinSerialize] private List<IInitializable> initializable = new();
+    [NonSerialized, OdinSerialize] private List<IInitializable> initializables = new();
     private void Start()
     {
-        foreach (var behaviour in monoBehaviours)
-            if (behaviour is IInitializable initializable)
-                initializable.Initialize();
+        foreach (var behaviour in initializables)
+            behaviour.Initialize();
     }
 }

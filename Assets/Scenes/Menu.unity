@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 127
 --- !u!114 &258783631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,7 +2182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &287114109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3429,8 +3429,6 @@ MonoBehaviour:
   - {fileID: 1689854913}
   - {fileID: 2134038028}
   transformTeam: {fileID: 963610595}
-  chosenHeroes: {fileID: 11400000, guid: 68e321b1261ed514b9aaeffba4a6daa8, type: 2}
-  heroes: []
   missionNumber: 1
   goFight: 0
 --- !u!4 &521551976
@@ -4594,7 +4592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &963610595
 Transform:
   m_ObjectHideFlags: 0
@@ -4984,7 +4982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1004597944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6234,37 +6232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e489bbb3256c6054ca9276fbba90e1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heros:
-  - txtName: {fileID: 1960131159}
-    iconImg: {fileID: 1511324399}
-    prefabHero: {fileID: 4085740015180432208, guid: 07d7f61bdc78eaa4dbbd665631471a38, type: 3}
-    icon: {fileID: 21300000, guid: 0eecc28eeaaf64e42810f3195253c303, type: 3}
-    name: Knight
-    description: Super puper boy
-    skills: {fileID: 21300000, guid: 17ec35e183cacb54e8e63be376fe886a, type: 3}
-    weapon: Sword
-    armor: IronArmor
-    jewelry: GoldenRing
-    spheraMagec: SphereWater
-    damage: 10
-    maxHP: 100
-    defense: 10
-    activeHero: 1
-  - txtName: {fileID: 1960131159}
-    iconImg: {fileID: 988899239}
-    prefabHero: {fileID: 4085740015180432208, guid: 54a1e727698521a4fa9cc6c2965dfcc6, type: 3}
-    icon: {fileID: 21300000, guid: 4f7fc41c787fb4e429256c2c47c038d0, type: 3}
-    name: Ninja
-    description: Smoke boy
-    skills: {fileID: 21300000, guid: d13a448cc4b90a746a48fb6fb1e424ef, type: 3}
-    weapon: Sword
-    armor: noArmor
-    jewelry: SmokeBomb
-    spheraMagec: SpheraSmoke
-    damage: 20
-    maxHP: 50
-    defense: 5
-    activeHero: 1
 --- !u!1 &1206445578
 GameObject:
   m_ObjectHideFlags: 0
@@ -11270,37 +11237,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006660602}
   m_CullTransparentMesh: 1
---- !u!1 &2009786428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2009786429}
-  m_Layer: 0
-  m_Name: test
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2009786429
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009786428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015666053
 GameObject:
   m_ObjectHideFlags: 0

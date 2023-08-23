@@ -99,7 +99,7 @@ public class Heroes : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Game")
         {
-            sliderHPTeam = GameObject.FindGameObjectWithTag("HPTeam").GetComponent<sliderTeamHeroes>();
+            //sliderHPTeam = GameObject.FindGameObjectWithTag("HPTeam").GetComponent<sliderTeamHeroes>();
         }
     }
     private void OnDisable()
