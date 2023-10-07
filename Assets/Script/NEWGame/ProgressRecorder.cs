@@ -9,8 +9,10 @@ public class ProgressRecorder : MonoBehaviour
     [SerializeField] SavedProgress _savedProgress;
     public void RecordProgress()
     {
-       var progress = CalculateProgress();
-        _savedProgress.Save(_levelData.level, progress);
+        var progress = CalculateProgress();
+
+        if (_levelData.level.playerProgress < progress)
+            _savedProgress.Save(_levelData.level, progress);
     }
 
     public int CalculateProgress()

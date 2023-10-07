@@ -12,6 +12,7 @@ public class CharacterController : MonoBehaviour, IView<Character>
     private Dictionary<string, CustomAnimation> animations = new();
     public event Action<float> onHit;
     private bool isAttacking;
+    [SerializeField] CharacterStat _damageStat;
 
     public void ViewData(Character data)
     {
@@ -42,9 +43,8 @@ public class CharacterController : MonoBehaviour, IView<Character>
                 spriteRenderer.sprite = animation.sprites[i];
                 yield return new WaitForSeconds(animation.duration / animation.sprites.Length);
             }
-
             if (isAttacking)
-                onHit?.Invoke(_character.Damage);
+                onHit?.Invoke(_character.GetStatValue(_damageStat));
 
             if (!animation.loop)
                 break;

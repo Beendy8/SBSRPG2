@@ -602,6 +602,7 @@ MonoBehaviour:
   image: {fileID: 1110142778}
   maxHP: 0
   currentHP: 0
+  _hpStat: {fileID: 11400000, guid: b08945f247e853141b12b0132f9b07e6, type: 2}
   characters: {fileID: 11400000, guid: 3589852acdfc48943b33e64625164b74, type: 2}
   attackers: {fileID: 11400000, guid: 3e31570af83cb1740a9035c39a81e507, type: 2}
   onDie:
@@ -833,6 +834,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: f53e97c3502fd804aad18b3c689d390d, type: 2}
+        m_TargetAssemblyTypeName: ScriptableObjectSaver, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 50fedee2d8fc2304c9161818da0a5ef6, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.ScriptableObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1302,6 +1315,7 @@ MonoBehaviour:
   image: {fileID: 1644214442}
   maxHP: 0
   currentHP: 0
+  _hpStat: {fileID: 11400000, guid: b08945f247e853141b12b0132f9b07e6, type: 2}
   characters: {fileID: 11400000, guid: 68e321b1261ed514b9aaeffba4a6daa8, type: 2}
   attackers: {fileID: 11400000, guid: 0489c7405667d0944992103d0216734a, type: 2}
   onDie:

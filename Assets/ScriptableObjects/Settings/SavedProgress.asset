@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e40dfaae8e8f344cb16cc327ba7d20b, type: 3}
   m_Name: SavedProgress
   m_EditorClassIdentifier: 
+  _progress:
+    m_Keys:
+    - {fileID: 11400000, guid: 50f8925d7b756a547a8c6fd63435b421, type: 2}
+    - {fileID: 11400000, guid: 99fa11857546ba04d933a5bb4d5446b2, type: 2}
+    - {fileID: 11400000, guid: ad4425d16140cd24892adb743802a01c, type: 2}
+    m_Values: 030000000300000003000000

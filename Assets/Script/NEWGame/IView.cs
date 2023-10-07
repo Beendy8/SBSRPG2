@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IView<T> where T : ScriptableObject
+public interface IView<T> 
 {
     public void ViewData(T data);
 }

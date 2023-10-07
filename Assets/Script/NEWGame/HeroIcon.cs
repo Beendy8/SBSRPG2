@@ -11,10 +11,9 @@ public class HeroIcon : MonoBehaviour, IView<Character>
 
     public void ViewData(Character data)
     {
-        Character character = data;
-        _image.sprite = character.icon;
-        _text.text = character.name;
-        _character = character;
+        _character = data;
+        _image.sprite = _character.icon;
+        _text.text = _character.name;
     }
     public void AddCharacterToList(CharacterList characterList)
     {

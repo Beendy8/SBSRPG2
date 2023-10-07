@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -9,6 +8,7 @@ public class HealthBar : MonoBehaviour, IInitializable
     [SerializeField] private Image image;
     [SerializeField] private float maxHP;
     [SerializeField] private float currentHP;
+    [SerializeField] CharacterStat _hpStat;
     public float normalizedHealth => currentHP / maxHP;
     [SerializeField] private CharacterList characters;
     [SerializeField] private CharacterControllerList attackers;
@@ -18,8 +18,9 @@ public class HealthBar : MonoBehaviour, IInitializable
     public void CountHP()
     {
         foreach (var character in characters)
-            maxHP += character.HP;
-
+        {
+            maxHP += character.GetStatValue(_hpStat);
+        }
         currentHP = maxHP;
     }
 

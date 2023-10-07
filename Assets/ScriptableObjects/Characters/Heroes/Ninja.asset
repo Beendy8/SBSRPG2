@@ -61,3 +61,12 @@ MonoBehaviour:
     - {fileID: 21300000, guid: c9e4a189589f8244a9e6af4275d9576f, type: 3}
     - {fileID: 21300000, guid: ceb7d4fc786464949886ebdbca9b7c0d, type: 3}
   _icon: {fileID: 21300000, guid: 4f7fc41c787fb4e429256c2c47c038d0, type: 3}
+  _stats:
+    m_Keys:
+    - {fileID: 11400000, guid: 6e441a547ff224b43a21c04c411ef8f6, type: 2}
+    - {fileID: 11400000, guid: 0ade993b65294b94b87fcbe1ccb3b156, type: 2}
+    - {fileID: 11400000, guid: b08945f247e853141b12b0132f9b07e6, type: 2}
+    m_Values:
+    - 10
+    - 1
+    - 50

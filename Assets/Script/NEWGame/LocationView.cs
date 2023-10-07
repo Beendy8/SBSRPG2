@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,7 +37,7 @@ public class LocationView : MonoBehaviour, IView<Location>, IDataLoader<Level>
             newLevelView.onClick += SaveCurrentLevelData;
             levelViews.Add(newLevelView);
         }
-            
+
     }
     private void SaveCurrentLevelData(Level level)
     {
