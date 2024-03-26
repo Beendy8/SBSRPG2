@@ -52,9 +52,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 3399366371065839118}
-  levelViewPrefab: {fileID: -3067150942618952020, guid: 68220b1b4b9e66144970e3f35a1da415, type: 3}
-  levelsParent: {fileID: 8608319139934554102}
-  currentLevelData: {fileID: 11400000, guid: ed980fde074862e4c842cd76913236f1, type: 2}
+  _onView:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Loader`1[[Level, Assembly-CSharp
+        m_MethodName: LoadData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3399366371065839116
 GameObject:
   m_ObjectHideFlags: 0

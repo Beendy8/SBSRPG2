@@ -18,3 +18,5 @@ MonoBehaviour:
   _difficulty: 1
   _buttonImage: {fileID: 21300000, guid: 1e9250417d62a99428062b33a0dd62b1, type: 3}
   _ordinalNumber: 1
+  _reward:
+  - {fileID: 11400000, guid: e2ac2acd5890ba04fb885a47c1b0175d, type: 2}

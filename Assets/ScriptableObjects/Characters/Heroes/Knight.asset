@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2941b8155d84c29499e9e28f0d25718e, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
-  _HP: 45
-  _Damage: 50
-  _attackSpeed: 1
   run:
     sprites:
     - {fileID: 21300000, guid: 7ca86e227dae14b4eaeca90db56210cc, type: 3}
@@ -60,13 +57,15 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 25a7ffdf62877cd4fbe925e7ba13bea3, type: 3}
     - {fileID: 21300000, guid: 3314055e06cc62141a8e13332ef11c9b, type: 3}
     - {fileID: 21300000, guid: 4ab5aae33e7530d47a2d522de135724d, type: 3}
-  _icon: {fileID: 21300000, guid: 0eecc28eeaaf64e42810f3195253c303, type: 3}
+  _headIcon: {fileID: 21300000, guid: 0eecc28eeaaf64e42810f3195253c303, type: 3}
+  _bodyIcon: {fileID: 21300000, guid: fcd96bf40b540534d85c7e73f5a7ce96, type: 3}
+  _animator: {fileID: 22100000, guid: e0118080f824239498af5389c3e14667, type: 2}
   _stats:
     m_Keys:
     - {fileID: 11400000, guid: 6e441a547ff224b43a21c04c411ef8f6, type: 2}
     - {fileID: 11400000, guid: 0ade993b65294b94b87fcbe1ccb3b156, type: 2}
     - {fileID: 11400000, guid: b08945f247e853141b12b0132f9b07e6, type: 2}
     m_Values:
-    - 1
-    - 50
+    - 2
+    - 10
     - 45

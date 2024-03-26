@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2941b8155d84c29499e9e28f0d25718e, type: 3}
   m_Name: Ninja
   m_EditorClassIdentifier: 
-  _HP: 50
-  _Damage: 1
-  _attackSpeed: 10
   run:
     sprites:
     - {fileID: 21300000, guid: 7c5bc96d45c220444bb80992929b2233, type: 3}
@@ -60,7 +57,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: eb8efe427f5660843995e6922d263e0e, type: 3}
     - {fileID: 21300000, guid: c9e4a189589f8244a9e6af4275d9576f, type: 3}
     - {fileID: 21300000, guid: ceb7d4fc786464949886ebdbca9b7c0d, type: 3}
-  _icon: {fileID: 21300000, guid: 4f7fc41c787fb4e429256c2c47c038d0, type: 3}
+  _headIcon: {fileID: 21300000, guid: 4f7fc41c787fb4e429256c2c47c038d0, type: 3}
+  _bodyIcon: {fileID: 21300000, guid: 7c9a428c552f88e4a917272a80abd2d2, type: 3}
+  _animator: {fileID: 22100000, guid: 11b34b267ec6e5243824aca52b317882, type: 2}
   _stats:
     m_Keys:
     - {fileID: 11400000, guid: 6e441a547ff224b43a21c04c411ef8f6, type: 2}

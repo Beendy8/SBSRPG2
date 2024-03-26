@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814bb16373873194dbf6bd1bb4d94616, type: 3}
   m_Name: HeroesOnScene
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 0}
