@@ -1,4 +1,4 @@
-public class CharacterLoader : Loader<Character>
+public class CharacterLoader : Loader<CharacterData>
 {
 
 }

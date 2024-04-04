@@ -7,8 +7,8 @@ using UnityEngine;
 public class Level : ScriptableObject
 {
     [SerializeField] string _name;
-    [SerializeField] Character[] _enemies;
-    public Character[] enemies => _enemies;
+    [SerializeField] CharacterData[] _enemies;
+    public CharacterData[] enemies => _enemies;
     [SerializeField] int _difficulty;
     [SerializeField] Sprite _buttonImage;
     [SerializeField] int _ordinalNumber;

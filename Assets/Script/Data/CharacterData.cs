@@ -1,8 +1,7 @@
 using Sirenix.OdinInspector;
-using UnityEditor.Animations;
 using UnityEngine;
 
-public class Character : ScriptableObject
+public class CharacterData : ScriptableObject
 {
     [FoldoutGroup("Animation")]
     [InfoBox("Не заполнена анимация", InfoMessageType.Error, "@this.run.sprites.Length == 0")]

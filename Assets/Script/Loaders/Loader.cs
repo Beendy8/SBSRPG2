@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class Loader<T> : MonoBehaviour
 {
     [FormerlySerializedAs("_viewsTransform")]
-    [SerializeField] Transform _viewsTransform;
+    [SerializeField] Transform _viewsParent;
     [SerializeField] protected List<GameObject> _views;
     public List<GameObject> views => _views;
     [SerializeField] GameObject _viewPrefab;
@@ -26,7 +26,7 @@ public class Loader<T> : MonoBehaviour
 
         if (_views.Count <= index)
         {
-            var gameObject = Instantiate(_viewPrefab, _viewsTransform);
+            var gameObject = Instantiate(_viewPrefab, _viewsParent);
             _views.Add(gameObject);
         }
 

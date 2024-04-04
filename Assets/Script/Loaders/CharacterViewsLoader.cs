@@ -2,11 +2,11 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterViewsLoader : MonoBehaviour, IDataLoader<Character>
+public class CharacterViewsLoader : MonoBehaviour, IDataLoader<CharacterData>
 {
     [SerializeField] GameObject _viewPrefab;
     [SerializeField] Transform _viewsParent;
-    [SerializeField] Character[] _characters;
+    [SerializeField] CharacterData[] _characters;
     [HideInInspector]
     [SerializeField] List<GameObject> _views = new();
 
@@ -27,7 +27,7 @@ public class CharacterViewsLoader : MonoBehaviour, IDataLoader<Character>
             GameObject view = Instantiate(_viewPrefab, _viewsParent);
             view.SetActive(true);
             _views.Add(view);
-            (this as IDataLoader<Character>).LoadData(hero, view.GetComponent<IView<Character>>());
+            (this as IDataLoader<CharacterData>).LoadData(hero, view.GetComponent<IView<CharacterData>>());
         }
     }
 #endif

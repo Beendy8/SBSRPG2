@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StatsLoader : OdinEditorWindow
 {
-    [SerializeField] Character[] _characters;
+    [SerializeField] CharacterData[] _characters;
     [SerializeField] CharacterStat[] _stats;
 
     [MenuItem("Tools/Character Stats Loader")]
@@ -17,7 +17,7 @@ public class StatsLoader : OdinEditorWindow
     [OnInspectorInit]
     public void Initialize()
     {
-        _characters = GetAssetsOfType<Character>();
+        _characters = GetAssetsOfType<CharacterData>();
         _stats = GetAssetsOfType<CharacterStat>();
     }
 
@@ -43,7 +43,7 @@ public class StatsLoader : OdinEditorWindow
         foreach (var character in _characters)
             LoadCharactersDefaultStats(character);
     }
-    void LoadCharactersDefaultStats(Character character)
+    void LoadCharactersDefaultStats(CharacterData character)
     {
         foreach (var stat in _stats)
         {

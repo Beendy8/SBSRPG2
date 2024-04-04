@@ -321,13 +321,13 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 4344acd8a3518c84ab3860057de564b2, type: 2}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: cd9a6b5ebafea904bb8bc340907645d8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: UIMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &270617692
@@ -966,9 +966,6 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
-    - _Target: {fileID: 850371788}
-      _MethodName: RecordProgress
-      _PersistentArguments: []
     - _Target: {fileID: 11400000, guid: fa7734cd4a9fba54fb43448d37588087, type: 2}
       _MethodName: get_data
       _PersistentArguments: []
@@ -976,13 +973,16 @@ MonoBehaviour:
       _MethodName: ClaimReward
       _PersistentArguments:
       - _Type: 15
-        _Int: 2
+        _Int: 1
         _String: Level, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         _X: 0
         _Y: 0
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 850371788}
+      _MethodName: RecordProgress
+      _PersistentArguments: []
 --- !u!4 &593951279
 Transform:
   m_ObjectHideFlags: 0
@@ -2462,13 +2462,13 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 4344acd8a3518c84ab3860057de564b2, type: 2}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: cd9a6b5ebafea904bb8bc340907645d8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: UIMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2009265160

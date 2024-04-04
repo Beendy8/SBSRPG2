@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class CharacterBtnsLoader : MonoBehaviour, IDataLoader<Character>
+public class CharacterBtnsLoader : MonoBehaviour, IDataLoader<CharacterData>
 {
     [SerializeField] CharacterList _characterList;
     [SerializeField] CharacterBtn[] _characterBtns;
@@ -31,7 +31,7 @@ public class CharacterBtnsLoader : MonoBehaviour, IDataLoader<Character>
 
         for (int i = 0; i < _characterList.Count; i++)
         {
-            (this as IDataLoader<Character>).LoadData(_characterList[i], _characterBtns[i]);
+            (this as IDataLoader<CharacterData>).LoadData(_characterList[i], _characterBtns[i]);
         }
     }
 }

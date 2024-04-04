@@ -6,6 +6,9 @@ public class LevelRewardClaimer : MonoBehaviour
 
     public void ClaimReward(Level level)
     {
+        if (level.playerProgress > 0)
+            return;
+
         _inventory.AddRange(level.reward);
     }
 }

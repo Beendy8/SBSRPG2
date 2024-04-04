@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterBtn : MonoBehaviour, IView<Character>
+public class CharacterBtn : MonoBehaviour, IView<CharacterData>
 {
     [SerializeField] Image icon;
-    Character _character;
+    CharacterData _character;
 
-    public void ViewData(Character data)
+    public void ViewData(CharacterData data)
     {
         _character = data;
         icon.sprite = _character.headIcon;

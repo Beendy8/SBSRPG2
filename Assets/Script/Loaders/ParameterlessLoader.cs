@@ -6,6 +6,7 @@ public class ParameterlessLoader<T> : Loader<T>
 
     public void LoadData()
     {
+        //Debug.LogError($"Loader {gameObject.name} data name {_data.name} count {_data.Count}");
         LoadData(_data);
     }
 }

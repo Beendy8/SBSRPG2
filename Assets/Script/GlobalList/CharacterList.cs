@@ -1,4 +1,4 @@
-public class CharacterList : GlobalList<Character>
+public class CharacterList : GlobalList<CharacterData>
 {
 
 }

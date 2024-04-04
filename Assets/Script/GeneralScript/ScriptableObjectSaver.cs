@@ -51,7 +51,7 @@ public class ScriptableObjectSaver : SerializedScriptableObject
             loadable.Load();
     }
 
-    public void LoadLevels()
+    public void LoadSaveables()
     {
         foreach (var saveable in saveables)
             Load(saveable);

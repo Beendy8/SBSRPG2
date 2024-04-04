@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class CharacterControllerOld : MonoBehaviour, IView<Character>
+public class CharacterControllerOld : MonoBehaviour, IView<CharacterData>
 {
-    private Character _character;
+    private CharacterData _character;
     [SerializeField] private SpriteRenderer spriteRenderer;
     private Coroutine animationCoroutine;
     private Dictionary<string, CustomAnimation> animations = new();
@@ -15,7 +15,7 @@ public class CharacterControllerOld : MonoBehaviour, IView<Character>
     [SerializeField] CharacterStat _damageStat;
     [SerializeField] Animator _animator;
 
-    public void ViewData(Character data)
+    public void ViewData(CharacterData data)
     {
         _character = data;
         animations.Add("run", _character.run);

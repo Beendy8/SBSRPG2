@@ -1,4 +1,4 @@
-public class ParameterlessCharacterLoader : ParameterlessLoader<Character>
+public class ParameterlessCharacterLoader : ParameterlessLoader<CharacterData>
 {
 
 }

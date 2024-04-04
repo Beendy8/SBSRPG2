@@ -1,12 +1,10 @@
-using System;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : ScriptableObject
 {
-    public void LoadScene(SceneAsset scene)
+    public void LoadScene(string scene)
     {
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(scene);
     }
 }
